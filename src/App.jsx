@@ -1,5 +1,14 @@
+import MembersList from "./components/MembersList";
+import AddMemberForm from "./components/AddMemberForm";
+
 function App() {
-  return <h1>Church App Loaded!</h1>;
+  return (
+    <div>
+      <h1>Church Member Management</h1>
+      <AddMemberForm />
+      <MembersList />
+    </div>
+  );
 }
 
 export default App;
