@@ -20,9 +20,9 @@ export default function AddMemberForm() {
       ]);
 
     if (error) {
-      console.error(error);
-      alert("Failed to add member");
-    } else {
+  console.error("Supabase insert error:", error);
+  alert("Failed to add member: " + error.message);
+} else {
       alert("Member added!");
       setFirstName("");
       setLastName("");
